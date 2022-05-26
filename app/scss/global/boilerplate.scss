@@ -1,0 +1,99 @@
+@use '../util' as *;
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+//the main style is light then we'll add dark mode
+body {
+    background-color: var(--l-bg);
+    margin: 2rem 5rem;
+    padding: 0em;
+    font-family: "Inter", sans-serif;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header {
+        }
+
+        .btn {
+        }
+    }
+
+    main {
+        .dashboard {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+
+            .dash-card {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                background-color: var(--l-card-bg);
+
+                .head-with-img {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+
+                .dash-number {
+                    color: var(--l-h-text);
+                    font-size: 5rem;
+                    font-weight: 700;
+                }
+
+                .rising {
+                    display: flex;
+                    align-items: center;
+                    color: var(--rising-num);
+                }
+
+                .falling {
+                    display: flex;
+                    align-items: center;
+                    color: var(--falling-num);
+                }
+            }
+        }
+
+        .overview {
+            .overview-box {
+                .overview-card {
+                    .rising {
+                        display: flex;
+                        align-items: center;
+                        color: var(--rising-num);
+                    }
+
+                    .falling {
+                        display: flex;
+                        align-items: center;
+                        color: var(--falling-num);
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        height: 1rem;
+        .attribution {
+            font-size: rem(11);
+            text-align: center;
+
+            a {
+                color: hsl(228, 45%, 44%);
+            }
+        }
+    }
+}
