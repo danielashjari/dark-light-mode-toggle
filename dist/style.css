@@ -1,0 +1,101 @@
+:root {
+  --rising-num: hsl(163, 72%, 41%);
+  --falling-num: hsl(356, 69%, 56%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --YouTube: hsl(348, 97%, 39%);
+  --dark-bg: hsl(230, 17%, 14%);
+  --dark-top-bg: hsl(232, 19%, 15%);
+  --dark-card-bg: hsl(228, 28%, 20%);
+  --dark-p-text: hsl(228, 34%, 66%);
+  --dark-h-text: hsl(0, 0%, 100%);
+  --l-bg: hsl(0, 0%, 100%);
+  --l-top-bg: hsl(225, 100%, 98%);
+  --l-card-bg: hsl(227, 47%, 96%);
+  --l-p-text: hsl(228, 12%, 44%);
+  --l-h-text: hsl(230, 17%, 14%);
+  --toggle-on: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --togglr-off: hsl(230, 22%, 74%);
+}
+
+h1, h2, h3 {
+  margin-top: 0rem;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--l-bg);
+  margin: 2rem 5rem;
+  padding: 0em;
+  font-family: "Inter", sans-serif;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+body main .dashboard .dash-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--l-card-bg);
+}
+body main .dashboard .dash-card .head-with-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body main .dashboard .dash-card .dash-number {
+  color: var(--l-h-text);
+  font-size: 5rem;
+  font-weight: 700;
+}
+body main .dashboard .dash-card .rising {
+  display: flex;
+  align-items: center;
+  color: var(--rising-num);
+}
+body main .dashboard .dash-card .falling {
+  display: flex;
+  align-items: center;
+  color: var(--falling-num);
+}
+body main .overview .overview-box .overview-card .rising {
+  display: flex;
+  align-items: center;
+  color: var(--rising-num);
+}
+body main .overview .overview-box .overview-card .falling {
+  display: flex;
+  align-items: center;
+  color: var(--falling-num);
+}
+body footer {
+  height: 1rem;
+}
+body footer .attribution {
+  font-size: 0.6875 rem;
+  text-align: center;
+}
+body footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
