@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "babel": "^6.23.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-terser": "^2.1.0"
+  }
+}
