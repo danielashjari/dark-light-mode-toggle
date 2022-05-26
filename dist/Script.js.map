@@ -1,0 +1,1 @@
+{"version":3,"sources":["Script.js"],"names":["darkMode","document","body","classList","toggle"],"mappings":"AAAA,aAAA,SAASA,WACSC,SAASC,KACfC,UAAUC,OAAO","file":"Script.js","sourcesContent":["function darkMode() {\r\n    var element = document.body;\r\n    element.classList.toggle(\"dark-mode\");\r\n};"]}

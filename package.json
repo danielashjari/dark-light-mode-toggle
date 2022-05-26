@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@babel/preset-env": "^7.18.2",
     "babel": "^6.23.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
