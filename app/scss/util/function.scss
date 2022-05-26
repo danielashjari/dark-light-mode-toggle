@@ -1,0 +1,5 @@
+// dont need to convert pixel to rem on yourown anymore
+
+@function rem($pixels, $context: 16){
+    @return ($pixels / $context)* 1 rem;
+}
