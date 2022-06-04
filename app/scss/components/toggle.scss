@@ -12,12 +12,12 @@ body{
             }
 
             button{
-                color: var(--toggle-off);
+                background-color: var(--toggle-off);
                 width: rem(50);
                 height: rem(25);
                 
                 &:hover, &::after{
-                    color: var(--toggle-on);
+                    background-color: var(--toggle-on);
                 }
             }
 
