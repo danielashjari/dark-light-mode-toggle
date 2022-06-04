@@ -1,0 +1,30 @@
+@use "../util" as *;
+
+.dashboard {
+    @include flex_box($justify: space-between, $align: stretch);
+
+    .dash-card {
+        @include flex_box($direction: column);
+        background-color: var(--l-card-bg);
+
+        .head-with-img {
+            @include flex_box();
+        }
+
+        .dash-number {
+            color: var(--l-h-text);
+            font-size: 5rem;
+            font-weight: 700;
+        }
+
+        .rising {
+            @include flex_box();
+            color: var(--rising-num);
+        }
+
+        .falling {
+            @include flex_box();
+            color: var(--falling-num);
+        }
+    }
+}

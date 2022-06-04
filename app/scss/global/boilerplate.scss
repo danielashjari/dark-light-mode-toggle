@@ -21,51 +21,9 @@ body {
         justify-content: space-between;
         align-items: center;
 
-        .header {
-        }
-
-        .btn {
-        }
     }
 
     main {
-        .dashboard {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: stretch;
-
-            .dash-card {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                background-color: var(--l-card-bg);
-
-                .head-with-img {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                }
-
-                .dash-number {
-                    color: var(--l-h-text);
-                    font-size: 5rem;
-                    font-weight: 700;
-                }
-
-                .rising {
-                    display: flex;
-                    align-items: center;
-                    color: var(--rising-num);
-                }
-
-                .falling {
-                    display: flex;
-                    align-items: center;
-                    color: var(--falling-num);
-                }
-            }
-        }
 
         .overview {
             .overview-box {
