@@ -93,9 +93,30 @@ body footer {
   height: 1rem;
 }
 body footer .attribution {
-  font-size: 0.6875 rem;
+  font-size: 0.6875rem;
   text-align: center;
 }
 body footer .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+body header .btn {
+  width: 8.75rem;
+  height: 1.5625rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .btn p {
+  width: 5.625rem;
+}
+body header .btn button {
+  color: var(--toggle-off);
+  width: 3.125rem;
+  height: 1.5625rem;
+}
+body header .btn button:hover, body header .btn button::after {
+  color: var(--toggle-on);
 }/*# sourceMappingURL=style.css.map */

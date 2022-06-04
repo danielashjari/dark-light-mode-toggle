@@ -1,0 +1,27 @@
+@use '../util' as *;
+
+body{
+    header{
+        .btn{
+            width: rem(140);
+            height: rem(25);
+            @include flex_box( $justify:space-between);
+
+            p{
+                width: rem(90);
+            }
+
+            button{
+                color: var(--toggle-off);
+                width: rem(50);
+                height: rem(25);
+                
+                &:hover, &::after{
+                    color: var(--toggle-on);
+                }
+            }
+
+        }
+
+    }
+}
