@@ -1,0 +1,17 @@
+@use '../util' as *; 
+
+.overview {
+    .overview-box {
+        .overview-card {
+            .rising {
+                @include flex_box();
+                color: var(--rising-num);
+            }
+
+            .falling {
+                @include flex_box();
+                color: var(--falling-num);
+            }
+        }
+    }
+}

@@ -47,38 +47,6 @@ body header {
   justify-content: space-between;
   align-items: center;
 }
-body main .dashboard {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-}
-body main .dashboard .dash-card {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--l-card-bg);
-}
-body main .dashboard .dash-card .head-with-img {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-body main .dashboard .dash-card .dash-number {
-  color: var(--l-h-text);
-  font-size: 5rem;
-  font-weight: 700;
-}
-body main .dashboard .dash-card .rising {
-  display: flex;
-  align-items: center;
-  color: var(--rising-num);
-}
-body main .dashboard .dash-card .falling {
-  display: flex;
-  align-items: center;
-  color: var(--falling-num);
-}
 body main .overview .overview-box .overview-card .rising {
   display: flex;
   align-items: center;
@@ -113,10 +81,71 @@ body header .btn p {
   width: 5.625rem;
 }
 body header .btn button {
-  color: var(--toggle-off);
+  background-color: var(--toggle-off);
   width: 3.125rem;
   height: 1.5625rem;
 }
 body header .btn button:hover, body header .btn button::after {
-  color: var(--toggle-on);
+  background-color: var(--toggle-on);
+}
+
+.overview .overview-box .overview-card .rising {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: justify content;
+  align-items: center;
+  color: var(--rising-num);
+}
+.overview .overview-box .overview-card .falling {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: justify content;
+  align-items: center;
+  color: var(--falling-num);
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.dashboard .dash-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: justify content;
+  align-items: center;
+  background-color: var(--l-card-bg);
+}
+.dashboard .dash-card .head-with-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: justify content;
+  align-items: center;
+}
+.dashboard .dash-card .dash-number {
+  color: var(--l-h-text);
+  font-size: 5rem;
+  font-weight: 700;
+}
+.dashboard .dash-card .rising {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: justify content;
+  align-items: center;
+  color: var(--rising-num);
+}
+.dashboard .dash-card .falling {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: justify content;
+  align-items: center;
+  color: var(--falling-num);
 }/*# sourceMappingURL=style.css.map */
