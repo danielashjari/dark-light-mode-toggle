@@ -85,7 +85,7 @@ body header .btn button {
   width: 3.125rem;
   height: 1.5625rem;
 }
-body header .btn button:hover, body header .btn button::after {
+body header .btn button:hover {
   background-color: var(--toggle-on);
 }
 
