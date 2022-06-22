@@ -21,6 +21,7 @@
 
 h1, h2, h3 {
   margin-top: 0rem;
+  margin-bottom: 0.5rem;
 }
 
 a, a:visited, a:active {
@@ -38,24 +39,12 @@ html {
 
 body {
   background-color: var(--l-bg);
-  margin: 2rem 5rem;
   padding: 0em;
+  margin: 0%;
   font-family: "Inter", sans-serif;
 }
-body header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-body main .overview .overview-box .overview-card .rising {
-  display: flex;
-  align-items: center;
-  color: var(--rising-num);
-}
-body main .overview .overview-box .overview-card .falling {
-  display: flex;
-  align-items: center;
-  color: var(--falling-num);
+body main {
+  margin: 2rem 5rem;
 }
 body footer {
   height: 1rem;
@@ -66,6 +55,17 @@ body footer .attribution {
 }
 body footer .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2.5rem 10rem;
+  background-color: var(--l-top-bg);
 }
 
 body header .btn {
