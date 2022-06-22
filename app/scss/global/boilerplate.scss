@@ -12,37 +12,14 @@ html{
 //the main style is light then we'll add dark mode
 body {
     background-color: var(--l-bg);
-    margin: 2rem 5rem;
     padding: 0em;
+    margin: 0%;
     font-family: "Inter", sans-serif;
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
+    main{
+        margin: 2rem 5rem;
     }
 
-    main {
-
-        .overview {
-            .overview-box {
-                .overview-card {
-                    .rising {
-                        display: flex;
-                        align-items: center;
-                        color: var(--rising-num);
-                    }
-
-                    .falling {
-                        display: flex;
-                        align-items: center;
-                        color: var(--falling-num);
-                    }
-                }
-            }
-        }
-    }
     footer {
         height: 1rem;
         .attribution {

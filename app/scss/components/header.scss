@@ -1,0 +1,18 @@
+@use "../util" as *;
+
+header {
+    @include flex_box($justify: space-between);
+
+    width: 100%;
+    padding: rem(40) rem(160);
+    background-color: var(--l-top-bg);
+
+    .header{
+        p{
+            margin-top: 0;
+        }
+    }
+
+
+    
+}
