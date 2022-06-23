@@ -10,8 +10,8 @@
   --card-bg: hsl(227, 47%, 96%);
   --p-text: hsl(228, 12%, 44%);
   --h-text: hsl(230, 17%, 14%);
-  --toggle-on: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-  --toggle-off: hsl(230, 22%, 74%);
+  --toggle: hsl(230, 22%, 74%);
+  --toggle-hover: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 .dark-mode {
@@ -20,6 +20,7 @@
   --card-bg: hsl(228, 28%, 20%);
   --p-text: hsl(228, 34%, 66%);
   --h-text: hsl(0, 0%, 100%);
+  --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 h1, h2, h3 {
@@ -86,7 +87,7 @@ header .header p {
   width: 5em;
   height: 2em;
   border-radius: 1.875rem;
-  background: var(--toggle-off);
+  background: var(--toggle);
   position: absolute;
   cursor: pointer;
 }
@@ -97,6 +98,9 @@ header .header p {
   width: 5.625rem;
   left: -5.9375rem;
   top: 0.3125rem;
+}
+.toggle .darkmode .label:hover {
+  background: var(--toggle-hover);
 }
 
 #checkbox:checked ~ .ball {

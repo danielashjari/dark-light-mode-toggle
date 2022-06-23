@@ -1,8 +1,6 @@
 @use '../util' as *;
 
 .toggle{
-    margin-top: -120px;
-    width: 3%;
     .darkmode{
         @include flex_box;
         color: var(--p-text);
@@ -11,7 +9,7 @@
             width: 5em;
             height: 2em;
             border-radius: rem(30);
-            background: var(--toggle-off);
+            background: var(--toggle);
             position: absolute;
             cursor: pointer;
             
@@ -24,6 +22,9 @@
                 top: rem(5);
             }
             
+            &:hover{
+                background: var(--toggle-hover);
+            }
         }
     }
 }
