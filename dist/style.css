@@ -26,10 +26,15 @@
 h1, h2, h3 {
   margin-top: 0rem;
   margin-bottom: 0.5rem;
+  color: var(--h-text);
 }
 
 a, a:visited, a:active {
   text-decoration: none;
+}
+
+p {
+  color: var(--p-text);
 }
 
 html {
@@ -154,6 +159,10 @@ header .header p {
   justify-content: justify content;
   align-items: center;
   background-color: var(--card-bg);
+  border-top: 0.25rem solid;
+  width: 16.25rem;
+  height: 100%;
+  border-radius: 0.625rem;
 }
 .dashboard .dash-card .head-with-img {
   display: flex;
@@ -166,6 +175,9 @@ header .header p {
   color: var(--h-text);
   font-size: 5rem;
   font-weight: 700;
+}
+.dashboard .dash-card .followers {
+  text-transform: uppercase;
 }
 .dashboard .dash-card .rising {
   display: flex;
@@ -182,4 +194,19 @@ header .header p {
   justify-content: justify content;
   align-items: center;
   color: var(--falling-num);
+}
+.dashboard .facebook {
+  border-color: var(--Facebook);
+}
+.dashboard .twitter {
+  border-color: var(--Twitter);
+}
+.dashboard .instagram {
+  border-color: transparent;
+  -o-border-image: var(--Instagram);
+     border-image: var(--Instagram);
+  border-image-slice: 1;
+}
+.dashboard .youtube {
+  border-color: var(--YouTube);
 }/*# sourceMappingURL=style.css.map */

@@ -6,6 +6,10 @@
     .dash-card {
         @include flex_box($direction: column);
         background-color: var(--card-bg);
+        border-top: rem(4) solid;
+        width: rem(260);
+        height: 100%; //should become 215px
+        border-radius: rem(10);
 
         .head-with-img {
             @include flex_box();
@@ -17,6 +21,10 @@
             font-weight: 700;
         }
 
+        .followers{
+            text-transform: uppercase;
+        }
+
         .rising {
             @include flex_box();
             color: var(--rising-num);
@@ -26,5 +34,21 @@
             @include flex_box();
             color: var(--falling-num);
         }
+
+    }
+    .facebook{
+        border-color:  var(--Facebook);
+    }
+    .twitter{
+        border-color:  var(--Twitter);
+    }
+    .instagram{
+        border-color: transparent;
+        border-image: var(--Instagram);
+        border-image-slice: 1;
+        
+    }
+    .youtube{
+        border-color: var(--YouTube);
     }
 }

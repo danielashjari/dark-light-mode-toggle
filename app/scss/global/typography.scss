@@ -1,8 +1,13 @@
 h1,h2,h3 {
     margin-top: 0rem;
     margin-bottom: 0.5rem;
+    color: var(--h-text);
 }
 
 a, a:visited, a:active{
     text-decoration: none;
+}
+
+p{
+    color: var(--p-text);
 }
