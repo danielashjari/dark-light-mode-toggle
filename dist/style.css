@@ -128,20 +128,58 @@ header .header p {
   transition: all 250ms ease-in-out;
 }
 
-.overview .overview-box .overview-card .rising {
+.overview .overview-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.overview .overview-box .overview-card {
+  background-color: var(--card-bg);
+  height: 7.8125rem;
+  width: 16.25rem;
+  margin-top: 1.5625rem;
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.overview .overview-box .overview-card .up {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.overview .overview-box .overview-card .down {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.overview .overview-box .overview-card .down .rising {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: justify content;
   align-items: center;
+}
+.overview .overview-box .overview-card .down .rising .number {
   color: var(--rising-num);
 }
-.overview .overview-box .overview-card .falling {
+.overview .overview-box .overview-card .down .falling {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: justify content;
   align-items: center;
+}
+.overview .overview-box .overview-card .down .falling .number {
   color: var(--falling-num);
 }
 

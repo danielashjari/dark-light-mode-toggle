@@ -1,191 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
-  
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-    <link rel="stylesheet" href="./Dist/style.css">
-    <script defer="" src="./Dist/script.js"></script>
-  
-    <title>Frontend Mentor | [Social media dashboard]</title>
-  
-  </head>
-  
-  <body>
-  
-    <header>
-      <div class="header">
-        <h1>Social Media Dashboard</h1>
-        <p>Total Followers: 23,004</p>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./Dist/style.css">
+  <script defer="" src="./Dist/script.js"></script>
+
+  <title>Frontend Mentor | [Social media dashboard]</title>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <h1>Social Media Dashboard</h1>
+      <p>Total Followers: 23,004</p>
+    </div>
+
+    <div class="toggle">
+      <div class="darkmode">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox" class="label"></label>
+        <div class="ball"></div>
+        </label>
       </div>
-  
-      <div class="toggle">
-        <div class="darkmode">
-          <input type="checkbox" name="checkbox" id="checkbox">
-          <label for="checkbox" class="label"></label>
-            <div class="ball"></div>
-          </label>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="dashboard">
+
+      <div class="dash-card facebook">
+
+        <div class="head-with-img">
+          <img src="./images/icon-facebook.svg" alt="Facebook icon">
+          <p>@nathanf</p>
+        </div>
+
+        <section class="dash-number">1987</section>
+
+        <p class="followers">Followers</p>
+
+        <div class="rising">
+          <img src="./images/icon-up.svg" alt="UP green icon">
+          <div> 12 Today</div>
         </div>
       </div>
-  
-    </header>
-  
-    <main>
-  
-      <section class="dashboard">
-  
-        <div class="dash-card facebook">
-  
-          <div class="head-with-img">
-            <img src="./images/icon-facebook.svg" alt="Facebook icon">
-            <p>@nathanf</p>
-          </div>
-  
-          <section class="dash-number">1987</section>
-          
-          <p class="followers">Followers</p>
-  
-          <div class="rising">
-            <img src="./images/icon-up.svg" alt="UP green icon">
-            <div> 12 Today</div>
-          </div>
+
+      <div class="dash-card twitter">
+
+        <div class="head-with-img">
+          <img src="./images/icon-twitter.svg" alt="Twitter icon">
+          <p>@nathanf</p>
         </div>
-  
-        <div class="dash-card twitter">
-  
-          <div class="head-with-img">
-            <img src="./images/icon-twitter.svg" alt="Twitter icon">
-            <p>@nathanf</p>
-          </div>
-  
-          <section class="dash-number">1044</section>
-          
-          <p class="followers">Followers</p>
-  
-          <div class="rising">
-            <img src="./images/icon-up.svg" alt="Rising green icon">
-            <div> 99 Today</div>
-          </div>
+
+        <section class="dash-number">1044</section>
+
+        <p class="followers">Followers</p>
+
+        <div class="rising">
+          <img src="./images/icon-up.svg" alt="Rising green icon">
+          <div> 99 Today</div>
         </div>
-  
-        <div class="dash-card instagram">
-  
-          <div class="head-with-img">
-            <img src="./images/icon-instagram.svg" alt="Instagram icon">
-            <p>@realnathanf</p>
-          </div>
-  
-          <section class="dash-number">11k</section>
-          <p class="followers">Followers</p>
-  
-          <div class="rising">
-            <img src="./images/icon-up.svg" alt="Rising green icon">
-            <div> 1099 Today</div>
-          </div>
+      </div>
+
+      <div class="dash-card instagram">
+
+        <div class="head-with-img">
+          <img src="./images/icon-instagram.svg" alt="Instagram icon">
+          <p>@realnathanf</p>
         </div>
-  
-        <div class="dash-card youtube">
-  
-          <div class="head-with-img">
-            <img src="./images/icon-youtube.svg" alt="Youtube icon">
-            <p>Nathan F.</p>
-          </div>
-  
-          <section class="dash-number">8239</section>
-          
-          <p class="followers">Subscribers</p>
-  
-          <div class="falling">
-            <img src="./images/icon-down.svg" alt="Down red arrow">
-            <div>144 Today</div>
-          </div>
+
+        <section class="dash-number">11k</section>
+        <p class="followers">Followers</p>
+
+        <div class="rising">
+          <img src="./images/icon-up.svg" alt="Rising green icon">
+          <div> 1099 Today</div>
         </div>
-      </section>
-  
-      <section class="overview">
-        <h2>Overview - Today</h2>
-  
-        <div class="overview-box">
-  
-          <div class="overview-card">
+      </div>
+
+      <div class="dash-card youtube">
+
+        <div class="head-with-img">
+          <img src="./images/icon-youtube.svg" alt="Youtube icon">
+          <p>Nathan F.</p>
+        </div>
+
+        <section class="dash-number">8239</section>
+
+        <p class="followers">Subscribers</p>
+
+        <div class="falling">
+          <img src="./images/icon-down.svg" alt="Down red arrow">
+          <div>144 Today</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview">
+      <h2>Overview - Today</h2>
+
+      <div class="overview-box">
+
+        <div class="overview-card">
+          <section class="up">
             <p>Page Views</p>
             <img src="./images/icon-facebook.svg" alt="Facebook icon">
-            
-            
+          </section>
+
+          <section class="down">
             <h1>87</h1>
-  
             <div class="rising">
               <img src="./images/icon-up.svg" alt="Up green arrow">
-              <p>3%</p>
+              <div class="number">3%</div>
             </div>
-  
-          </div>
-  
-          <div class="overview-card">
-            Likes
-            <img src="./images/icon-facebook.svg" alt="Facebook icon">
-            52
-            2%
-          </div>
-  
-          <div class="overview-card">
-            Likes
-            <img src="./images/icon-instagram.svg" alt="Instagram icon">
-            5462
-            2257%
-          </div>
-  
-          <div class="overview-card">
-            Profile Views
-            <img src="./images/icon-instagram.svg" alt="Instagram icon">
-            52k
-            1375%
-          </div>
-  
-          <div class="overview-card">
-            Retweets
-            <img src="./images/icon-twitter.svg" alt="Twitter icon">
-            117
-            303%
-          </div>
-  
-          <div class="overview-card">
-            Likes
-            <img src="./images/icon-twitter.svg" alt="Twitter icon">
-            507
-            553%
-          </div>
-  
-          <div class="overview-card">
-            Likes
-            <img src="./images/icon-youtube.svg" alt="Youtube icon">
-            107
-            19%
-          </div>
-  
-          <div class="overview-card">
-            Total Views
-            <img src="./images/icon-youtube.svg" alt="Youtube icon">
-            1407
-            12%
-          </div>
+          </section>
+
         </div>
-      </section>
-  
-    </main>
-  
-    <footer>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://www.frontendmentor.io/profile/danielashjari">Danial</a>.
+
+        <div class="overview-card">
+          <section class="up">
+            <p>Likes</p>
+            <img src="./images/icon-facebook.svg" alt="Facebook icon">
+          </section>
+
+          <section class="down">
+            <h1>52</h1>
+
+            <div class="falling">
+              <img src="./images/icon-down.svg" alt="Down red arrow">
+              <div class="number">2%</div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="overview-card">
+          <section class="up">
+            <p>Likes</p>
+            <img src="./images/icon-instagram.svg" alt="Instagram icon">
+          </section>
+
+          <section class="down">
+            <h1>5462</h1>
+            <div class="rising">
+              <img src="./images/icon-up.svg" alt="Up green arrow">
+              <div class="number">2275%</div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="overview-card">
+          <section class="up">
+            <P>Profile Views</P>
+            <img src="./images/icon-instagram.svg" alt="Instagram icon">
+          </section>
+
+          <section class="down">
+            <h1>52k</h1>
+            <div class="rising">
+              <img src="./images/icon-up.svg" alt="Up green arrow">
+              <div class="number">1375%</div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="overview-card">
+          <section class="up">
+            <p>Retweets</P>
+            <img src="./images/icon-twitter.svg" alt="Twitter icon">
+          </section>
+
+          <section class="down">
+            <h1>117</h1>
+            <div class="rising">
+              <img src="./images/icon-up.svg" alt="Up green arrow">
+              <div class="number">303%</div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="overview-card">
+          <section class="up">
+            <p>Likes</P>
+            <img src="./images/icon-twitter.svg" alt="Twitter icon">
+          </section>
+
+          <section class="down">
+            <h1>507</h1>
+            <div class="rising">
+              <img src="./images/icon-up.svg" alt="Up green arrow">
+              <div class="number">553%</div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="overview-card">
+          <section class="up">
+            <p>Likes</P>
+            <img src="./images/icon-youtube.svg" alt="Youtube icon">
+          </section>
+
+          <section class="down">
+            <h1>107</h1>
+            <div class="falling">
+              <img src="./images/icon-down.svg" alt="Down red arrow">
+              <div class="number">19%</div>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="overview-card">
+          <section class="up">
+            <p>Total Views</P>
+            <img src="./images/icon-youtube.svg" alt="Youtube icon">
+          </section>
+
+          <section class="down">
+            <h1>1407</h1>
+            <div class="falling">
+              <img src="./images/icon-down.svg" alt="Down red arrow">
+              <div class="number">12%</div>
+
+            </div>
+          </section>
+        </div>
       </div>
-    </footer>
-  
-  
-  </body></html>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/danielashjari">Danial</a>.
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

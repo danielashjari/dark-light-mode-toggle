@@ -2,15 +2,40 @@
 
 .overview {
     .overview-box {
+        @include flex_box($wrap:wrap, $justify: space-between, $align: stretch);
+
         .overview-card {
-            .rising {
-                @include flex_box();
-                color: var(--rising-num);
+            background-color: var(--card-bg);
+            height: rem(125);
+            width: rem(260);
+            margin-top: rem(25);
+            padding: rem(20);
+            border-radius: rem(5);
+            @include flex_box($direction:column, $justify:space-between, $align:stretch);
+
+
+            .up{
+                @include flex_box($justify:space-between);
             }
 
-            .falling {
-                @include flex_box();
-                color: var(--falling-num);
+            .down{
+                @include flex_box($justify: space-between);
+
+                .rising {
+                    @include flex_box();
+                    
+                    .number {
+                        color: var(--rising-num);
+                    }
+                }
+    
+                .falling {
+                    @include flex_box();
+                    
+                    .number {
+                        color: var(--falling-num);
+                    }
+                }
             }
         }
     }
