@@ -5,14 +5,14 @@
 
     .dash-card {
         @include flex_box($direction: column);
-        background-color: var(--l-card-bg);
+        background-color: var(--card-bg);
 
         .head-with-img {
             @include flex_box();
         }
 
         .dash-number {
-            color: var(--l-h-text);
+            color: var(--h-text);
             font-size: 5rem;
             font-weight: 700;
         }
