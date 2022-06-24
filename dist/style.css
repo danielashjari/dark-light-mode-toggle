@@ -82,15 +82,17 @@ header .header p {
 
 .toggle .darkmode {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: nowrap;
   justify-content: justify content;
   align-items: center;
   color: var(--p-text);
+  font-size: 14px;
+  font-weight: 700;
 }
 .toggle .darkmode .label {
-  width: 5em;
-  height: 2em;
+  width: 3.125rem;
+  height: 1.5625rem;
   border-radius: 1.875rem;
   background: var(--toggle);
   position: absolute;
@@ -100,16 +102,16 @@ header .header p {
   content: "Dark Mode";
   position: absolute;
   display: inline-block;
-  width: 5.625rem;
-  left: -5.9375rem;
-  top: 0.3125rem;
+  width: 4.6875rem;
+  left: -5.625rem;
+  top: 0.25rem;
 }
 .toggle .darkmode .label:hover {
   background: var(--toggle-hover);
 }
 
 #checkbox:checked ~ .ball {
-  transform: translateX(3em);
+  transform: translateX(-1.5625rem);
 }
 
 #checkbox {
@@ -117,13 +119,13 @@ header .header p {
 }
 
 .ball {
-  width: 1.6em;
-  height: 1.6em;
+  width: 1.125rem;
+  height: 1.125rem;
   background-color: var(--top-bg);
   position: absolute;
   border-radius: 50%;
   margin-top: -0.3px;
-  margin-left: 3px;
+  margin-right: 3px;
   cursor: pointer;
   transition: all 250ms ease-in-out;
 }
