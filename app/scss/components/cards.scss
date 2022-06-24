@@ -1,38 +1,62 @@
 @use "../util" as *;
 
 .dashboard {
-    @include flex_box($justify: space-between, $align: stretch);
+    @include flex_box($justify:center, $align: stretch);
 
     .dash-card {
         @include flex_box($direction: column);
         background-color: var(--card-bg);
         border-top: rem(4) solid;
-        width: rem(260);
+        width: rem(255);
         height: 100%; //should become 215px
         border-radius: rem(10);
+        margin-right: 0;
+        margin-left: rem(30);
 
         .head-with-img {
-            @include flex_box();
+            display: flex;
+            align-items: flex-start;
+            font-size: 13px;
+            margin-top: rem(30);
+            margin-bottom: rem(12);
+            img{
+                margin-right: rem(10);
+            }
         }
 
         .dash-number {
             color: var(--h-text);
-            font-size: 5rem;
+            font-size: 3.5rem;
             font-weight: 700;
+            margin: rem(1);
+            
         }
 
         .followers{
-            text-transform: uppercase;
+            font-variant: small-caps;
+            margin-bottom: rem(25);
         }
 
         .rising {
             @include flex_box();
+            img{
+                margin: rem(3);
+            }
             color: var(--rising-num);
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: rem(25);
         }
-
+        
         .falling {
             @include flex_box();
+            img{
+                margin: rem(3);
+            }
             color: var(--falling-num);
+            font-size: 13px;
+            margin-top: 0;
+            margin-bottom: rem(25);
         }
 
     }

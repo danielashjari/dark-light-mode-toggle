@@ -35,6 +35,8 @@ a, a:visited, a:active {
 
 p {
   color: var(--p-text);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 html {
@@ -189,7 +191,7 @@ header .header p {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
 }
 .dashboard .dash-card {
@@ -200,24 +202,31 @@ header .header p {
   align-items: center;
   background-color: var(--card-bg);
   border-top: 0.25rem solid;
-  width: 16.25rem;
+  width: 15.9375rem;
   height: 100%;
   border-radius: 0.625rem;
+  margin-right: 0;
+  margin-left: 1.875rem;
 }
 .dashboard .dash-card .head-with-img {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: justify content;
-  align-items: center;
+  align-items: flex-start;
+  font-size: 13px;
+  margin-top: 1.875rem;
+  margin-bottom: 0.75rem;
+}
+.dashboard .dash-card .head-with-img img {
+  margin-right: 0.625rem;
 }
 .dashboard .dash-card .dash-number {
   color: var(--h-text);
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 700;
+  margin: 0.0625rem;
 }
 .dashboard .dash-card .followers {
-  text-transform: uppercase;
+  font-variant: small-caps;
+  margin-bottom: 1.5625rem;
 }
 .dashboard .dash-card .rising {
   display: flex;
@@ -226,6 +235,12 @@ header .header p {
   justify-content: justify content;
   align-items: center;
   color: var(--rising-num);
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 1.5625rem;
+}
+.dashboard .dash-card .rising img {
+  margin: 0.1875rem;
 }
 .dashboard .dash-card .falling {
   display: flex;
@@ -234,6 +249,12 @@ header .header p {
   justify-content: justify content;
   align-items: center;
   color: var(--falling-num);
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 1.5625rem;
+}
+.dashboard .dash-card .falling img {
+  margin: 0.1875rem;
 }
 .dashboard .facebook {
   border-color: var(--Facebook);
