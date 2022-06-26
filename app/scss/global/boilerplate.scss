@@ -18,6 +18,9 @@ body {
 
     main{
         margin: 2rem 5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     footer {

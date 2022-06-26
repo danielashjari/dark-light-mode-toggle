@@ -1,14 +1,16 @@
 @use '../util' as *; 
 
 .overview {
-    .overview-box {
-        @include flex_box($wrap:wrap, $justify: space-between, $align: stretch);
+    margin: rem(35) 5.3125rem 0 5.3125rem;
 
+    .overview-box {
+        display: flex;
         .overview-card {
             background-color: var(--card-bg);
             height: rem(125);
-            width: rem(260);
+            width: rem(270);
             margin-top: rem(25);
+            margin-left: rem(25);
             padding: rem(20);
             border-radius: rem(5);
             @include flex_box($direction:column, $justify:space-between, $align:stretch);
@@ -37,6 +39,10 @@
                     }
                 }
             }
+        }
+
+        .first{
+            margin-left: 0;
         }
     }
 }
