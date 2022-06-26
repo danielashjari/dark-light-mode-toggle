@@ -56,6 +56,9 @@ body {
 }
 body main {
   margin: 2rem 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 body footer {
   height: 1rem;
@@ -132,18 +135,18 @@ header .header p {
   transition: all 250ms ease-in-out;
 }
 
+.overview {
+  margin: 2.1875rem 5.3125rem 0 5.3125rem;
+}
 .overview .overview-box {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
 }
 .overview .overview-box .overview-card {
   background-color: var(--card-bg);
   height: 7.8125rem;
-  width: 16.25rem;
+  width: 16.875rem;
   margin-top: 1.5625rem;
+  margin-left: 1.5625rem;
   padding: 1.25rem;
   border-radius: 0.3125rem;
   display: flex;
@@ -186,6 +189,9 @@ header .header p {
 .overview .overview-box .overview-card .down .falling .number {
   color: var(--falling-num);
 }
+.overview .overview-box .first {
+  margin-left: 0;
+}
 
 .dashboard {
   display: flex;
@@ -202,8 +208,8 @@ header .header p {
   align-items: center;
   background-color: var(--card-bg);
   border-top: 0.25rem solid;
-  width: 15.9375rem;
-  height: 100%;
+  width: 15rem;
+  height: 12.5rem;
   border-radius: 0.625rem;
   margin-right: 0;
   margin-left: 1.875rem;
@@ -213,16 +219,17 @@ header .header p {
   align-items: flex-start;
   font-size: 13px;
   margin-top: 1.875rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.3125rem;
 }
 .dashboard .dash-card .head-with-img img {
-  margin-right: 0.625rem;
+  margin-right: 0.3125rem;
+  margin-bottom: 5px;
 }
 .dashboard .dash-card .dash-number {
   color: var(--h-text);
   font-size: 3.5rem;
   font-weight: 700;
-  margin: 0.0625rem;
+  margin-bottom: -7px;
 }
 .dashboard .dash-card .followers {
   font-variant: small-caps;
@@ -258,6 +265,7 @@ header .header p {
 }
 .dashboard .facebook {
   border-color: var(--Facebook);
+  margin-left: 0;
 }
 .dashboard .twitter {
   border-color: var(--Twitter);

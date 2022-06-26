@@ -3,12 +3,13 @@
 .dashboard {
     @include flex_box($justify:center, $align: stretch);
 
+
     .dash-card {
         @include flex_box($direction: column);
         background-color: var(--card-bg);
         border-top: rem(4) solid;
-        width: rem(255);
-        height: 100%; //should become 215px
+        width: rem(240);
+        height: rem(200); //should become 215px
         border-radius: rem(10);
         margin-right: 0;
         margin-left: rem(30);
@@ -18,9 +19,10 @@
             align-items: flex-start;
             font-size: 13px;
             margin-top: rem(30);
-            margin-bottom: rem(12);
+            margin-bottom: rem(5);
             img{
-                margin-right: rem(10);
+                margin-right: rem(5);
+                margin-bottom: 5px;
             }
         }
 
@@ -28,7 +30,7 @@
             color: var(--h-text);
             font-size: 3.5rem;
             font-weight: 700;
-            margin: rem(1);
+            margin-bottom: -7px;
             
         }
 
@@ -62,6 +64,7 @@
     }
     .facebook{
         border-color:  var(--Facebook);
+        margin-left: 0;
     }
     .twitter{
         border-color:  var(--Twitter);
