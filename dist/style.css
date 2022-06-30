@@ -136,7 +136,7 @@ header .header p {
 }
 
 .overview {
-  margin: 2.1875rem 5.3125rem 0 5.3125rem;
+  margin: 2.1875rem 4.375rem 0 4.375rem;
 }
 .overview .overview-box {
   display: flex;
@@ -144,10 +144,10 @@ header .header p {
 .overview .overview-box .overview-card {
   background-color: var(--card-bg);
   height: 7.8125rem;
-  width: 16.875rem;
+  width: 16.5625rem;
   margin-top: 1.5625rem;
   margin-left: 1.5625rem;
-  padding: 1.25rem;
+  padding: 1.25rem 1.875rem;
   border-radius: 0.3125rem;
   display: flex;
   flex-direction: column;
@@ -168,6 +168,7 @@ header .header p {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.5625rem;
 }
 .overview .overview-box .overview-card .down .rising {
   display: flex;
@@ -178,6 +179,7 @@ header .header p {
 }
 .overview .overview-box .overview-card .down .rising .number {
   color: var(--rising-num);
+  font-size: 0.75rem;
 }
 .overview .overview-box .overview-card .down .falling {
   display: flex;
@@ -188,6 +190,7 @@ header .header p {
 }
 .overview .overview-box .overview-card .down .falling .number {
   color: var(--falling-num);
+  font-size: 0.75rem;
 }
 .overview .overview-box .first {
   margin-left: 0;

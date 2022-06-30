@@ -6,6 +6,8 @@ header {
     width: 100%;
     padding: rem(40) rem(160);
     background-color: var(--top-bg);
+    border-bottom-left-radius: rem(10);
+    border-bottom-right-radius: rem(10);
 
     .header{
         p{

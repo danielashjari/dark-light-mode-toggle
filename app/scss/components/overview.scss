@@ -1,17 +1,17 @@
 @use '../util' as *; 
 
 .overview {
-    margin: rem(35) 5.3125rem 0 5.3125rem;
+    margin: rem(35) rem(70) 0 rem(70);
 
     .overview-box {
         display: flex;
         .overview-card {
             background-color: var(--card-bg);
             height: rem(125);
-            width: rem(270);
+            width: rem(265);
             margin-top: rem(25);
             margin-left: rem(25);
-            padding: rem(20);
+            padding: rem(20) rem(30);
             border-radius: rem(5);
             @include flex_box($direction:column, $justify:space-between, $align:stretch);
 
@@ -22,20 +22,22 @@
 
             .down{
                 @include flex_box($justify: space-between);
-
+                font-size: rem(25);
                 .rising {
                     @include flex_box();
                     
                     .number {
                         color: var(--rising-num);
+                        font-size: rem(12);
                     }
                 }
-    
+                
                 .falling {
                     @include flex_box();
                     
                     .number {
                         color: var(--falling-num);
+                        font-size: rem(12);
                     }
                 }
             }
