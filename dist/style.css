@@ -164,15 +164,25 @@ header .divider {
 .overview {
   margin: 2.1875rem 4.375rem 0 4.375rem;
 }
+@media (max-width: 39.9375em) {
+  .overview {
+    margin: 0;
+  }
+}
 .overview .overview-box {
   display: flex;
+}
+@media (max-width: 39.9375em) {
+  .overview .overview-box {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .overview .overview-box .overview-card {
   background-color: var(--card-bg);
   height: 7.8125rem;
   width: 16.5625rem;
-  margin-top: 1.5625rem;
-  margin-left: 1.5625rem;
+  margin: 1.5625rem 0 0 1.5625rem;
   padding: 1.25rem 1.875rem;
   border-radius: 0.3125rem;
   display: flex;
@@ -183,6 +193,11 @@ header .divider {
 }
 .overview .overview-box .overview-card:hover {
   background-color: var(--card-hover);
+}
+@media (max-width: 39.9375em) {
+  .overview .overview-box .overview-card {
+    margin: 0 0 0.9375rem;
+  }
 }
 .overview .overview-box .overview-card .up {
   display: flex;

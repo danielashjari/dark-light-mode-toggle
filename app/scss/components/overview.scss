@@ -2,21 +2,31 @@
 
 .overview {
     margin: rem(35) rem(70) 0 rem(70);
+    @include breakpoint-down (small){
+        margin: 0;
+    }
 
     .overview-box {
         display: flex;
+        @include breakpoint-down (small){
+            flex-direction: column;
+            align-items: center;
+        }
         .overview-card {
             background-color: var(--card-bg);
             height: rem(125);
             width: rem(265);
-            margin-top: rem(25);
-            margin-left: rem(25);
+            margin: rem(25) 0 0 rem(25);
             padding: rem(20) rem(30);
             border-radius: rem(5);
             @include flex_box($direction:column, $justify:space-between, $align:stretch);
-
+            
             &:hover{
                 background-color: var(--card-hover);
+            }
+            
+            @include breakpoint-down (small){
+                margin: 0 0 rem(15);
             }
 
             .up{
