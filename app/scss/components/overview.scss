@@ -15,6 +15,9 @@
             border-radius: rem(5);
             @include flex_box($direction:column, $justify:space-between, $align:stretch);
 
+            &:hover{
+                background-color: var(--card-hover);
+            }
 
             .up{
                 @include flex_box($justify:space-between);
