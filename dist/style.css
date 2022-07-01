@@ -82,8 +82,8 @@ header {
   width: 100%;
   padding: 2.5rem 10rem;
   background-color: var(--top-bg);
-  border-bottom-left-radius: 0.625rem;
-  border-bottom-right-radius: 0.625rem;
+  border-bottom-left-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
 }
 @media (max-width: 39.9375em) {
   header {
