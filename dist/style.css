@@ -92,6 +92,11 @@ header {
     padding: 2.5rem 1.5625rem;
   }
 }
+@media (max-width: 63.9375em) {
+  header {
+    padding: 2.5rem;
+  }
+}
 header .header p {
   margin-top: 0;
 }

@@ -9,10 +9,14 @@ header {
     border-bottom-left-radius: rem(30);
     border-bottom-right-radius: rem(30);
 
-    @include breakpoint-down(small) {
+    @include breakpoint-down(small) { //mobile design
         flex-direction: column;
         align-items: stretch;
         padding: rem(40) rem(25);
+    }
+
+    @include breakpoint-down(medium){ //tablet design
+        padding:2.5rem
     }
 
     .header {
@@ -24,7 +28,7 @@ header {
     .divider {
         visibility: hidden;
 
-        @include breakpoint-down(small) {
+        @include breakpoint-down(small) { //mobile design
             visibility: visible;
             height: 1px;
             width: 100%;
