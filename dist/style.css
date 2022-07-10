@@ -164,9 +164,15 @@ header .divider {
 .overview {
   margin: 2.1875rem 4.375rem 0 4.375rem;
 }
+.overview h2 {
+  color: var(--p-text);
+}
 @media (max-width: 39.9375em) {
   .overview {
     margin: 0;
+  }
+  .overview h2 {
+    margin-left: 0.3125rem;
   }
 }
 .overview .overview-box {
@@ -197,6 +203,7 @@ header .divider {
 @media (max-width: 39.9375em) {
   .overview .overview-box .overview-card {
     margin: 0 0 0.9375rem;
+    width: 20.3125rem;
   }
 }
 .overview .overview-box .overview-card .up {
@@ -273,6 +280,7 @@ header .divider {
 @media (max-width: 39.9375em) {
   .dashboard .dash-card {
     margin: 0 0 1.5625rem 0;
+    width: 20.3125rem;
   }
 }
 .dashboard .dash-card .head-with-img {
