@@ -265,6 +265,11 @@ header .divider {
     align-items: center;
   }
 }
+@media (max-width: 63.9375em) {
+  .dashboard {
+    flex-wrap: wrap;
+  }
+}
 .dashboard .dash-card {
   display: flex;
   flex-direction: column;
@@ -286,6 +291,12 @@ header .divider {
   .dashboard .dash-card {
     margin: 0 0 1.5625rem 0;
     width: 20.3125rem;
+  }
+}
+@media (max-width: 63.9375em) {
+  .dashboard .dash-card {
+    margin: 0.625rem;
+    justify-content: space-evenly;
   }
 }
 .dashboard .dash-card .head-with-img {
@@ -340,6 +351,11 @@ header .divider {
 .dashboard .facebook {
   border-color: var(--Facebook);
   margin-left: 0;
+}
+@media (max-width: 63.9375em) {
+  .dashboard .facebook {
+    margin-left: 0.625rem;
+  }
 }
 .dashboard .twitter {
   border-color: var(--Twitter);
