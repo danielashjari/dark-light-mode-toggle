@@ -1,2 +1,0 @@
-"use strict";var checkbox=document.getElementById("checkbox");function checkMode(){checkbox.checked?darkModeOn():darkModeOff()}function darkModeOn(){document.body.classList.add("dark-mode")}function darkModeOff(){document.body.classList.remove("dark-mode")}checkbox.addEventListener("click",checkMode);
-//# sourceMappingURL=Script.js.map
