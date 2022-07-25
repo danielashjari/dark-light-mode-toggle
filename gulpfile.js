@@ -7,7 +7,7 @@ function jsTask() {
     return src('app/JS/Script.js', { sourcemaps: true })
       .pipe(babel({ presets: ['@babel/preset-env'] }))
       .pipe(terser())
-      .pipe(dest('Dist', { sourcemaps: '.' }));
+      .pipe(dest('./', { sourcemaps: '.' }));
   }
 
 

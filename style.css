@@ -363,8 +363,7 @@ header .divider {
 }
 .dashboard .instagram {
   border-color: transparent;
-  -o-border-image: var(--Instagram);
-     border-image: var(--Instagram);
+  border-image: var(--Instagram);
   border-image-slice: 1;
 }
 .dashboard .youtube {

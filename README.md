@@ -77,6 +77,9 @@ For example:
 
 - [Brian Maina](https://dev.to/mainakibe/easy-guide-to-dark-mode-toggle-using-html-css-and-javascript-35ec) This is a limk to his dark mode toggle project on dev.to where you can find his codepen link fpr the same project.
 
+- [Kacper Kula](https://medium.com/hypersphere-codes/detecting-system-theme-in-javascript-css-react-f6b961916d48)Detecting system theme in JavaScript / CSS / React
+
+
 
 ## Author
 
