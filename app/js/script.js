@@ -1,20 +1,11 @@
-const checkbox = document.getElementById('checkbox');
-checkbox.addEventListener('click', checkMode);
 
-function checkMode() {
-    if (checkbox.checked) {
-        darkModeOn();
-    } else {
-        darkModeOff();
+const CHECKBOX = document.getElementById('checkbox');
+
+CHECKBOX.addEventListener('change', (e) => {
+ if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
     }
-}
-
-function darkModeOn() {
-    document.body.classList.add('dark-mode');
-}
-
-function darkModeOff() {
-    document.body.classList.remove('dark-mode');
-}
-
-
+    else {        
+      document.documentElement.setAttribute('data-theme', 'light');    
+    }   
+});

@@ -1,2 +1,2 @@
-"use strict";var checkbox=document.getElementById("checkbox");function checkMode(){checkbox.checked?darkModeOn():darkModeOff()}function darkModeOn(){document.body.classList.add("dark-mode")}function darkModeOff(){document.body.classList.remove("dark-mode")}checkbox.addEventListener("click",checkMode);
+"use strict";var CHECKBOX=document.getElementById("checkbox");CHECKBOX.addEventListener("change",(function(e){e.target.checked?document.documentElement.setAttribute("data-theme","dark"):document.documentElement.setAttribute("data-theme","light")}));
 //# sourceMappingURL=Script.js.map
